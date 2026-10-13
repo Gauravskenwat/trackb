@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="../theme.js"></script>
+<title>SmartBus – Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="chip" href="../index.html" aria-label="SmartBus home"><img class="lg-l" src="assets/logo.png" alt="TrackB logo"><img class="lg-d" src="assets/logo-dark.png" alt="" aria-hidden="true"></a>
+  <nav id="nav"><button data-nav="Track Bus">Track Bus</button><button class="on" data-nav="Services" aria-current="page">Services</button><button data-nav="History">History</button><button data-nav="Profile">Profile</button></nav>
+  <div class="hr">
+    <button class="ib" id="bell" aria-label="Notifications"><span data-i="bell" class="g"></span><span class="dot" id="bdot"></span></button>
+    <div class="pop" id="npop" style="right:130px"></div>
+    <span id="auth" style="display:flex;gap:20px;align-items:center"><button class="lnk" id="login">Login</button><button class="btn" id="signup">Sign Up</button></span>
+  </div>
+  <button id="menu" aria-label="Menu" data-i="menu"></button>
+</header>
+
+<div class="wrap">
+  <aside class="side">
+    <div class="who"><img src="assets/avatar.jpg" alt="Profile photo"><div><b>Aarav Mehta</b><small>aarav.mehta@gmail.com</small><br><span class="vf"><span data-i="check" class="g"></span>Verified</span></div></div>
+    <h2>Our services</h2>
+    <div class="navs" id="navs"></div>
+  </aside>
+  <main class="main"><div class="mh"><div><h1 id="mt"></h1><p id="ms"></p></div></div><div id="body"></div></main>
+</div>
+
+<footer>
+  <div class="fg">
+    <div><a class="chip" href="../index.html"><img src="assets/footer-logo.png" alt="TrackB logo" style="height:28px"></a><div style="font-size:11px;max-width:200px">Premium intercity travel experience with trust, comfort &amp; safety at heart.</div>
+      <div class="soc"><button data-s="Facebook" aria-label="Facebook">f</button><button data-s="Instagram" aria-label="Instagram">in</button><button data-s="Twitter" aria-label="Twitter">t</button><button data-s="YouTube" aria-label="YouTube">▶</button></div></div>
+    <div><h4>Quick Links</h4><a data-l="Home">Home</a><a data-l="Book Ticket">Book Ticket</a><a data-l="Track Bus">Track Bus</a><a data-l="My Trips">My Trips</a><a data-l="Help Center">Help Center</a></div>
+    <div><h4>Company</h4><a data-l="About Us">About Us</a><a data-l="Careers">Careers</a><a data-l="Terms &amp; Conditions">Terms &amp; Conditions</a><a data-l="Privacy Policy">Privacy Policy</a><a data-l="Contact Us">Contact Us</a></div>
+    <div><h4>Contact Details</h4><ul><li><span data-i="pin" class="g"></span>SmartBus HQ, Sector 62, Noida, Uttar Pradesh 201309</li><li><span data-i="mail" class="g"></span>support@smartbus.in</li><li><span data-i="phone" class="g"></span>+91 98765 43210</li></ul></div>
+    <div class="nl"><h4>Newsletter</h4><div style="font-size:10px;margin-bottom:8px">Subscribe for updates and offers.</div><input id="em" type="email" placeholder="Enter your email" aria-label="Email"><button class="btn" id="sub">Subscribe</button></div>
+  </div>
+  <div class="cp">© 2026 SmartBus. All rights reserved.</div>
+</footer>
+
+<dialog id="dlg"><div class="dh"><span id="dt"></span><button id="dx" aria-label="Close" data-i="close"></button></div><div class="db" id="dbody"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
